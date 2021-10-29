@@ -1,0 +1,39 @@
+.main {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+}
+
+nav,
+footer {
+  height: 50px;
+  background: #402312;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.content {
+  background: white;
+  color: #402312;
+  flex-grow: 1;
+  padding: 16px;
+  overflow: auto;
+}
+
+/*
+  This style only applies if width is higher than 450 Pixels.
+  This is a mobile first approach,where Mobile styles are defined and
+  Desktop styles overwrites the mobile behavior.
+*/
+@media screen and (min-width: 451px) {
+  .main {
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    border-radius: 16px;
+    max-width: 450px;
+  }
+}

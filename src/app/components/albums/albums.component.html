@@ -1,0 +1,7 @@
+<section>
+  <div class="album-wrapper" *ngIf="albums | async; else loading">
+    <app-album *ngFor="let album of albums | async" [album]="album"></app-album>
+  </div>
+
+  <ng-template #loading> <div>Cargando...</div> </ng-template>
+</section>

@@ -1,0 +1,10 @@
+.album-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+app-album {
+  margin: 70px 0;
+}
